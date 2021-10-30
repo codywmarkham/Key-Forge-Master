@@ -1,6 +1,5 @@
 .profile{
     display: flex;
-
 }
 
 .profileRight{
@@ -9,9 +8,9 @@
 
 .profileCover{
     height: 320px;
-    position: relative
-    ;
+    position: relative;
 }
+
 .profileCoverImg{
     width: 100%;
     height: 250px;
@@ -22,7 +21,6 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    position: absolute;
     object-fit: cover;
     position: absolute;
     left: 0;
@@ -41,7 +39,6 @@
 
 .profileInfoName{
     font-size: 24px;
-
 }
 
 .profileInfoDesc{

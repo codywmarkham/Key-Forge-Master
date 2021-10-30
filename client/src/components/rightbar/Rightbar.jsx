@@ -5,8 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
-import { Add, Remove } from "@material-ui/icons";
-import {Schedule} from "@material-ui/icons"
+import { Add, Remove, CalendarToday } from "@material-ui/icons";
 
 export default function Rightbar({ user }) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -49,10 +48,10 @@ export default function Rightbar({ user }) {
   const HomeRightbar = () => {
     return (
       <>
-        <div className="eventContainer">
-          <Schedule className="eventIcon"/>
-          <span className="eventText">
-          <b>Final Project</b> and <b>2 Other Events</b> Today
+        <div className="birthdayContainer">
+          <CalendarToday/>
+          <span className="birthdayText">
+            <b>Final Project</b> and <b>3 other Events</b> happening today.
           </span>
         </div>
         <img className="rightbarAd" src="assets/ad.jpg" alt="" />
@@ -75,7 +74,7 @@ export default function Rightbar({ user }) {
             {followed ? <Remove /> : <Add />}
           </button>
         )}
-        <h4 className="rightbarTitle">User information</h4>
+        <h4 className="rightbarTitle">Artist Information</h4>
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">City:</span>

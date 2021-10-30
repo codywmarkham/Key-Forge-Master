@@ -17,16 +17,16 @@ export default function Login() {
     );
   };
 
-    return (
-        <div className="login">
-            <div className="loginWrapper">
-                <div className="loginLeft">
-                    <h3 className="loginLogo">KeyForge</h3>
-                    <span className="loginDesc"> 
-                    Forge Your Keys To Open All Doors! 
-                    </span>
-                </div>
-                <div className="loginRight">
+  return (
+    <div className="login">
+      <div className="loginWrapper">
+        <div className="loginLeft">
+          <h3 className="loginLogo">KeyForge</h3>
+          <span className="loginDesc">
+          Forge Your Destiny at KeyForge.
+          </span>
+        </div>
+        <div className="loginRight">
           <form className="loginBox" onSubmit={handleClick}>
             <input
               placeholder="Email"
