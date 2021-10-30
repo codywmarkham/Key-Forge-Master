@@ -53,7 +53,7 @@ export default function Share() {
             alt=""
           />
           <input
-            placeholder={"Ready To Forge Ahead" + user.username + "?"}
+            placeholder={"Ready To Forge Ahead " + user.username + "?"}
             className="shareInput"
             ref={desc}
           />
